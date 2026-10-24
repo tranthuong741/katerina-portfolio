@@ -24,7 +24,9 @@
 <a class="skip" href="#main">Bỏ qua đến nội dung</a>
 <header class="top"><div class="wrap"><a class="brand" href="index.html"><i>TT</i>Thương Thương</a><nav aria-label="Điều hướng chính"><ul class="menu"><li><a href="index.html">Trang chủ</a></li><li><a href="about.html">Giới thiệu</a></li><li><a href="projects.html" aria-current="page">Dự án</a></li><li><a href="contact.html">Liên hệ</a></li></ul></nav><a class="lang" href="project-rowena-en.html" hreflang="en" aria-label="Switch to English"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><b class="l-vi on">VI</b><span class="sl">/</span><b class="l-en">EN</b></a></div></header>
 <main id="main"><section class="wrap">
-<div class="case-hero" data-tab="Rowena Tattoo Studio · Content Creator">
+
+<!-- Khôi phục lại class case-hero c-furify nguyên bản để hiển thị nền tím caro -->
+<div class="case-hero c-furify" data-tab="Rowena Tattoo Studio · Content Creator">
   <div>
     <h1>Rowena</h1>
     <p class="desc">Chiến dịch "Buy 1 Get 1 Mini Tattoo" thu hút du khách quốc tế mang dấu ấn Việt Nam khu vực chi nhánh Đà Nẵng.</p>
@@ -41,24 +43,24 @@
     <p class="pnote">Chiến dịch thực tế triển khai tại hệ thống Rowena Tattoo Studio.</p>
   </div>
 
-  <!-- Khối chứa 3 ảnh: Mỗi ảnh có khung nền riêng biệt (viền trắng bo tròn + đổ bóng nghệ thuật) -->
+  <!-- Khối 3 ảnh: Mỗi ảnh được tạo khung viền màu trắng bo góc riêng biệt nổi bật trên nền tím -->
   <figure style="margin: 0; display: flex; flex-direction: column; gap: 20px; background: transparent; padding: 0; border: none; box-shadow: none;">
     
-    <!-- Ảnh 1 (Ảnh chính lớn): Có khung viền nền riêng -->
-    <div style="background: #fff; padding: 10px; border-radius: 14px; box-shadow: 0 6px 18px rgba(0,0,0,0.08);">
-      <img src="rowena.jpg" alt="Các ấn phẩm và hoạt động tại Rowena Tattoo Studio" width="1400" height="787" decoding="async" style="width: 100%; height: auto; object-fit: cover; border-radius: 8px; display: block;">
+    <!-- Ảnh chính lớn: Khung viền màu trắng bo góc riêng -->
+    <div style="background: #ffffff; padding: 10px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
+      <img src="rowena.jpg" alt="Các ấn phẩm và hoạt động tại Rowena Tattoo Studio" width="1400" height="787" decoding="async" style="width: 100%; height: auto; object-fit: cover; border-radius: 10px; display: block;">
     </div>
 
-    <!-- Dải 2 ảnh phụ bên dưới: Mỗi ảnh có khung viền nền riêng + hiệu ứng xoay góc lộn xộn -->
+    <!-- Dải 2 ảnh phụ: Mỗi ảnh có khung viền màu trắng riêng + hiệu ứng xoay góc nhẹ -->
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; background: transparent; padding: 0;">
       
-      <!-- Ảnh 2: Khung nền riêng + Xoay nhẹ sang trái -->
-      <div style="transform: rotate(-2deg); transition: transform 0.3s ease; background: #fff; padding: 8px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.12);">
+      <!-- Ảnh phụ 1: Khung màu trắng + nghiêng trái -->
+      <div style="transform: rotate(-2deg); transition: transform 0.3s ease; background: #ffffff; padding: 8px; border-radius: 14px; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
         <img src="rowena1.jpg" alt="Mẫu xăm mini dấu ấn Việt Nam" style="width: 100%; height: 240px; object-fit: cover; border-radius: 8px; display: block;">
       </div>
 
-      <!-- Ảnh 3: Khung nền riêng + Xoay nhẹ sang phải -->
-      <div style="transform: rotate(2deg); transition: transform 0.3s ease; background: #fff; padding: 8px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.12);">
+      <!-- Ảnh phụ 2: Khung màu trắng + nghiêng phải -->
+      <div style="transform: rotate(2deg); transition: transform 0.3s ease; background: #ffffff; padding: 8px; border-radius: 14px; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
         <img src="rowena2.jpg" alt="Khách du lịch trải nghiệm xăm hình" style="width: 100%; height: 240px; object-fit: cover; border-radius: 8px; display: block;">
       </div>
 
