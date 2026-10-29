@@ -143,44 +143,16 @@
     
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: stretch;">
       
-      <!-- Cột 1: Video phỏng vấn du khách nước ngoài -->
-     <div style="background: #ffffff; padding: 10px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: space-between;">
-  <!-- Khung chứa video dọc (9/16) và nút bấm -->
-  <div style="position: relative; width: 100%; aspect-ratio: 9/16; max-height: 380px; border-radius: 10px; overflow: hidden; background: #000;">
-    
-    <!-- Video tự động chạy, lặp lại và mặc định tắt tiếng để chạy mượt trên mọi trình duyệt -->
-    <video id="rowenaVideo" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
-      <source src="rowena3.mp4" type="video/mp4">
-      Trình duyệt của bạn không hỗ trợ thẻ video.
-    </video>
-
-    <!-- Nút Bật/Tắt tiếng nổi ở góc video -->
-    <button onclick="toggleRowenaMute()" id="rowenaMuteBtn" style="position: absolute; bottom: 12px; right: 12px; background: rgba(0, 0, 0, 0.6); color: #fff; border: none; padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; cursor: pointer; display: flex; align-items: center; gap: 5px; backdrop-filter: blur(4px); transition: background 0.2s; z-index: 10;">
-      <span id="rowenaIconMuted">🔇</span> <span id="rowenaTextMuted">Bật tiếng</span>
-    </button>
+    <div style="background: #ffffff; padding: 10px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
+  <div style="width: 100%; aspect-ratio: 9/16; max-height: 420px; border-radius: 10px; overflow: hidden; background: #000;">
+    <video src="rowena3.mp4" autoplay loop muted controls playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
   </div>
-  
   <p style="margin: 8px 0 0 0; font-size: 0.85rem; color: #666; text-align: center;">Video phỏng vấn du khách nước ngoài</p>
 </div>
+  
 
-<!-- Đoạn mã JavaScript xử lý logic bật/tắt tiếng riêng cho video Rowena -->
-<script>
-  function toggleRowenaMute() {
-    var vid = document.getElementById("rowenaVideo");
-    var btnText = document.getElementById("rowenaTextMuted");
-    var icon = document.getElementById("rowenaIconMuted");
-    
-    if (vid.muted) {
-      vid.muted = false;
-      btnText.innerText = "Tắt tiếng";
-      icon.innerText = "🔊";
-    } else {
-      vid.muted = true;
-      btnText.innerText = "Bật tiếng";
-      icon.innerText = "🔇";
-    }
-  }
-</script>
+  
+
 
       <!-- Cột 2: Hình ảnh tham gia KOLs -->
       <div style="background: #ffffff; padding: 10px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: space-between;">
